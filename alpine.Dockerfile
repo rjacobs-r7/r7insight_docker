@@ -1,7 +1,8 @@
-# r7insight_docker
+# r7insight_docker alpine base
 
-FROM node:12.13.0-buster
+FROM mhart/alpine-node:12.13.0
 LABEL maintainer="Rapid 7 - InsightOps Team <InsightOpsTeam@rapid7.com>"
+RUN apk add --no-cache bash
 
 ENV NODE_ENV production
 
